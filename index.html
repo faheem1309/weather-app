@@ -6,23 +6,25 @@
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="app">
-    <h1>🌤 Weather App</h1>
 
-    <input
-      type="text"
-      id="cityInput"
-      placeholder="Enter city name"
-      autocomplete="off"
-    />
+<div class="app">
+  <h1>🌦️ Weather App</h1>
 
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+
+  <div class="controls">
     <button id="getWeatherBtn">Get Weather</button>
-
-    <div id="weatherResult"></div>
+    <button id="toggleUnit">°C</button>
   </div>
 
-  <script src="script.js"></script>
+  <div id="loader" class="loader hidden"></div>
+
+  <div id="weatherResult"></div>
+
+  <div id="recent"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
